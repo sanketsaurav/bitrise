@@ -1,0 +1,18 @@
+version = 1
+
+test_patterns = [
+  '_tests/**',
+]
+
+exclude_patterns = [
+  'vendor/**',
+]
+
+[[ analyzers ]]
+  name = 'go'
+  enabled = true
+  
+  [analyzers.meta]
+  import_path = 'github.com/sanketsaurav/bitrise'
+  dependencies_vendored = true
+
